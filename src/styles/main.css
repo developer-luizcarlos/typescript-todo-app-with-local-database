@@ -2,6 +2,7 @@
 @import url(variables.css);
 
 body {
+  background-color: var(--very-light-gray);
   font-family: var(--main-font);
 }
 
