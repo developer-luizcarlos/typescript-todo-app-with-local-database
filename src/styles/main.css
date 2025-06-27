@@ -4,3 +4,9 @@
 body {
   font-family: var(--main-font);
 }
+
+.header {
+  background-image: url(/public/images/bg-desktop-light.jpg);
+  background-size: cover;
+  height: 340px;
+}
