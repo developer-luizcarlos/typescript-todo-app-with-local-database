@@ -70,6 +70,7 @@ body {
   border: none;
   color: var(--main-color);
   font-size: 18px;
+  display: flex;
   height: 50px;
   outline: none;
   padding: 1.2rem;
@@ -83,4 +84,76 @@ body {
 .todo__input::placeholder {
   color: var(--input-placeholder);
   font-weight: 600;
+}
+
+.todo__body {
+  border-radius: 5px;
+  box-shadow: var(--task-list-shadow);
+  margin: 30px 0px;
+  overflow: hidden;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.task-item {
+  align-items: normal;
+  background-color: var(--tasks-info-bg);
+  border-bottom: 1px solid var(--task-border-color);
+  color: var(--main-color);
+  display: flex;
+  font-size: 1.2rem;
+  gap: 10px;
+  padding: 0.75rem;
+}
+
+.task-item.task-item--completed .task-item__content {
+  color: var(--task-item-color-completed);
+  text-decoration: line-through;
+}
+
+.task-item.task-item--completed .checkbox {
+  background-image: var(--check-bg-completed);
+}
+
+.task-item.task-item--completed .checkbox::before {
+  content: "\2714";
+  color: white;
+}
+
+.task-item__content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.checkbox {
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--check-border-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  min-height: 25px;
+  min-width: 30px;
+  overflow: hidden;
+  padding: 0.6 rem;
+  text-align: center;
+}
+
+.task-filter--chosen {
+  color: var(--tasks-filter-option-active);
+}
+
+.tasks-info {
+  align-items: center;
+  background-color: var(--tasks-info-bg);
+  color: var(--tasks-filter-options-and-info-color);
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 0.8rem;
 }
