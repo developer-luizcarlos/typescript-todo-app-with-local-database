@@ -16,7 +16,7 @@ body {
   padding: 0.5rem 0.75rem;
 }
 
-.btn-add {
+.btn--add {
   background-color: var(--button-add-bg);
   color: var(--button-add-color);
   cursor: pointer;
