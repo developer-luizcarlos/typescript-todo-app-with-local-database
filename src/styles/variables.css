@@ -19,7 +19,9 @@
   --main-font: "Josefin Sans", sans-serif;
   --title-color: hsl(0, 0%, 98%);
   --task-color: hsl(235, 24%, 19%);
+  --task-border-color: hsl(233, 11%, 84%);
   --task-item-color-completed: hsl(233, 11%, 84%);
+  --tasks-info-bg: hsl(0, 0%, 98%);
   --task-list-shadow: 0px 2px 156px 7px hsl(236, 9%, 61%);
   --tasks-filter-option-active: hsl(220, 98%, 61%);
   --tasks-filter-options-and-info-color: hsl(236, 9%, 61%);
