@@ -35,7 +35,7 @@ body {
 }
 
 .header {
-  background-image: url(/public/images/bg-desktop-light.jpg);
+  background-image: url(/images/bg-desktop-light.jpg);
   background-size: cover;
   height: 340px;
 }
